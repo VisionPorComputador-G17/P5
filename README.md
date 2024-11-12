@@ -6,14 +6,14 @@ El objetivo de esta práctica es realizar un filtro similar a los que tienen alg
 
 ### Tareas del proyecto
 
-### Vómito arcoiris
+### Vómito arcoíris
 
-Como primer filtro se implemento que, cuando la persona en cámara abra la boca, se dibuje un GIF sobre la boca, simulando de esta forma que está "vomitando arcoiris". Algunos aspectos a comentar del código:
+Como primer filtro se implemento que, cuando la persona en cámara abra la boca, se dibuje un GIF sobre la boca, simulando de esta forma que está "vomitando arcoíris". Algunos aspectos a comentar del código:
 
 - Se utiliza la librería mediapipe para la detección de la cara.
 - Se utiliza la librería PIL para la carga del GIF y posteriormente se convierte en una lista de fotogramas para su posterior dibujo.
 - Se declara la función mouth_open, la cual detecta el labio superior e inferior mediante landmarks y, si la distancia supera cierto umbral (por defecto 0.05), se dibuja el GIF anteriormente mencionado
-```py
+```
 def mouth_open(landmarks, threshold=0.05):
     """Calcula si la boca está abierta basado en la distancia entre puntos específicos."""
     top_lip = landmarks[13]  # Landmark del labio superior
@@ -86,6 +86,15 @@ pip install numpy
 ```
 pip install mediapipe
 ```
+
+## Bibliografía
+- [Introducción a MediaPipe ¿Qué es? ¿Cómo funciona?](https://www.youtube.com/watch?v=sxo7jD-Tulw&ab_channel=CuriosoC%C3%B3digo)
+- [Detección de rostros con MEDIAPIPE ? | Python – MediaPipe – OpenCV](https://omes-va.com/deteccion-de-rostros-mediapipe-python/)
+- [Detección de rostros con MEDIAPIPE 🧑 | Python - MediaPipe - OpenCV](https://www.youtube.com/watch?v=6lNn5_-RPAA&ab_channel=OMES)
+- [Malla Facial (MediaPipe Face Mesh) ? | Python – MediaPipe – OpenCV](https://omes-va.com/malla-facial-mediapipe-python/)
+- [MediaPipe Face Mesh GitHub](https://github.com/google-ai-edge/mediapipe/blob/master/docs/solutions/face_mesh.md)
+- [Pillow](https://pillow.readthedocs.io/en/stable/)
+
 
 ## Autoría
 [Sara Expósito Suárez](https://github.com/SaraE5)
