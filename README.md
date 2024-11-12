@@ -66,9 +66,18 @@ El objetivo de esta práctica es realizar un filtro similar a los que tienen alg
     ```
 
 ## Resultados
-![Resultado del Arcoíris](/results/rainbow_results.gif "[Resultado del Arcoíris")
-![Resultado de los destellos](/results/sparkles_results.gif "Resultado de los destellos")
-![Resultado de ambos juntos](/results/ambos_results.gif "Resultado de ambos juntos")
+<table style="width: 100%; text-align: center; border-collapse: collapse;">
+    <tr>
+        <td>Resultado del Arcoíris</td>
+        <td>Resultado de los destellos</td>
+        <td>Resultado de ambos juntos</td>
+    </tr>
+    <tr>
+        <td><img src="/results/rainbow_results.gif" alt="Resultado del Arcoíris" width="3em" /></td>
+        <td><img src="/results/sparkles_results.gif" alt="Resultado de los destellos" width="3em" /></td>
+        <td><img src="/results/rainbow_sparkles_results.gif" alt="Resultado de ambos juntos" width="3em" /></td>
+    </tr>
+</table>
 
 ## Requisitos
 
