@@ -13,7 +13,7 @@ El objetivo de esta práctica es realizar un filtro similar a los que tienen alg
     - Se utiliza la librería mediapipe para la detección de la cara.
     - Se utiliza la librería PIL para la carga del GIF y posteriormente se convierte en una lista de fotogramas para su posterior dibujo.
     - Se declara la función mouth_open, la cual detecta el labio superior e inferior mediante landmarks y, si la distancia supera cierto umbral (por defecto 0.05), se dibuja el GIF anteriormente mencionado
-    ```
+    ```py
     def mouth_open(landmarks, threshold=0.05):
         """Calcula si la boca está abierta basado en la distancia entre puntos específicos."""
         top_lip = landmarks[13]  # Landmark del labio superior
