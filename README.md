@@ -4,9 +4,9 @@
 
 El objetivo de esta práctica es realizar un filtro similar a los que tienen algunas aplicaciones como _Instagram_. En nuestro caso se ha realizado dos filtros diferentes que posteriormente hemos puesto en común. Dichos filtros se describirán a continuación.
 
-### Tareas del proyecto.
+### Tareas del proyecto
 
-### Vómito arcoiris.
+### Vómito arcoiris
 
 Como primer filtro se implemento que, cuando la persona en cámara abra la boca, se dibuje un GIF sobre la boca, simulando de esta forma que está "vomitando arcoiris". Algunos aspectos a comentar del código:
 
@@ -22,7 +22,7 @@ def mouth_open(landmarks, threshold=0.05):
     return mouth_height > threshold
 ```
 
-### Brillo al guiñar un ojo.
+### Brillo al guiñar un ojo
 
 El segundo filtro realizado consiste en que, al guiñar un ojo, se superponga en la imagen una imagen de unas estrellas/brillos cerca del ojo guiñado. Algunos aspectos a comentar:
 
@@ -65,4 +65,29 @@ def overlay_star(img, position, scale, mirror=False):
         )
 ```
 
-### Resultados.
+### Resultados
+
+### Requisitos
+
+### [Anaconda Prompt](https://www.anaconda.com/)
+```
+conda create --name VC_P5 python=3.9.5
+conda activate VC_P5
+```
+### OpenCV
+```
+pip install opencv-python
+```
+### NumPy
+```
+pip install numpy
+```
+### Mediapipe
+```
+pip install mediapipe
+```
+
+## Autoría
+[Sara Expósito Suárez](https://github.com/SaraE5)
+
+[Alejandro Padrón Ossorio](https://github.com/apadoss)
