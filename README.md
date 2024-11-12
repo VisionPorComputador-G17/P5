@@ -69,20 +69,20 @@ El objetivo de esta práctica es realizar un filtro similar a los que tienen alg
 
 ## Requisitos
 
-- ### [Anaconda Prompt](https://www.anaconda.com/)
+- [Anaconda Prompt](https://www.anaconda.com/)
     ```
     conda create --name VC_P5 python=3.9.5
     conda activate VC_P5
     ```
-- ### OpenCV
+- OpenCV
     ```
     pip install opencv-python
     ```
-- ### NumPy
+- NumPy
     ```
     pip install numpy
     ```
-- ### Mediapipe
+- Mediapipe
     ```
     pip install mediapipe
     ```
