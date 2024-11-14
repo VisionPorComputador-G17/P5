@@ -105,6 +105,7 @@ El objetivo de esta práctica es realizar un filtro similar a los que tienen alg
 - [Detección de rostros con MEDIAPIPE 🧑 | Python - MediaPipe - OpenCV](https://www.youtube.com/watch?v=6lNn5_-RPAA&ab_channel=OMES)
 - [Malla Facial (MediaPipe Face Mesh) ? | Python – MediaPipe – OpenCV](https://omes-va.com/malla-facial-mediapipe-python/)
 - [MediaPipe Face Mesh GitHub](https://github.com/google-ai-edge/mediapipe/blob/master/docs/solutions/face_mesh.md)
+- [FaceMeshIndices GitHub](https://github.com/ManuelTS/augmentedFaceMeshIndices)
 - [Pillow](https://pillow.readthedocs.io/en/stable/)
 
 
