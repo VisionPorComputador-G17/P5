@@ -19,6 +19,13 @@ El objetivo de esta práctica es realizar un filtro similar a los que tienen alg
         top_lip = landmarks[13]  # Landmark del labio superior
         bottom_lip = landmarks[14]  # Landmark del labio inferior
         mouth_height = abs(bottom_lip.y - top_lip.y)
+        
+        # Ajustar el umbral según la distancia entre los labios
+        lip_distance = abs(bottom_lip.z - top_lip.z)  # Calcular la distancia 3D entre el labio superior e inferior
+        correction_factor = 0.1  # Factor de corrección para suavizar el ajuste del umbral
+        threshold = threshold * (lip_distance ** correction_factor)  # Ajuste
+        
+        # Verificar si la boca está abierta según el umbral ajustado
         return mouth_height > threshold
     ```
 
