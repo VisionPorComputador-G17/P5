@@ -19,6 +19,13 @@ El objetivo de esta práctica es realizar un filtro similar a los que tienen alg
         top_lip = landmarks[13]  # Landmark del labio superior
         bottom_lip = landmarks[14]  # Landmark del labio inferior
         mouth_height = abs(bottom_lip.y - top_lip.y)
+        
+        # Ajustar el umbral según la distancia entre los labios
+        lip_distance = abs(bottom_lip.z - top_lip.z)  # Calcular la distancia 3D entre el labio superior e inferior
+        correction_factor = 0.1  # Factor de corrección para suavizar el ajuste del umbral
+        threshold = threshold * (lip_distance ** correction_factor)  # Ajuste
+        
+        # Verificar si la boca está abierta según el umbral ajustado
         return mouth_height > threshold
     ```
 
@@ -66,9 +73,18 @@ El objetivo de esta práctica es realizar un filtro similar a los que tienen alg
     ```
 
 ## Resultados
-![Resultado del Arcoíris](/results/rainbow_results.gif "Resultado del Arcoíris")
-![Resultado de los destellos](/results/sparkles_results.gif "Resultado de los destellos")
-![Resultado de ambos juntos](/results/ambos_results.gif "Resultado de ambos juntos")
+<table style="width: 100%; text-align: center; border-collapse: collapse;">
+    <tr>
+        <td>Resultado del Arcoíris</td>
+        <td>Resultado de los destellos</td>
+        <td>Resultado de ambos juntos</td>
+    </tr>
+    <tr>
+        <td><img src="/results/rainbow_results.gif" alt="Resultado del Arcoíris" width="3em" /></td>
+        <td><img src="/results/sparkles_results.gif" alt="Resultado de los destellos" width="3em" /></td>
+        <td><img src="/results/rainbow_sparkles_results.gif" alt="Resultado de ambos juntos" width="3em" /></td>
+    </tr>
+</table>
 
 ## Requisitos
 
@@ -96,6 +112,7 @@ El objetivo de esta práctica es realizar un filtro similar a los que tienen alg
 - [Detección de rostros con MEDIAPIPE 🧑 | Python - MediaPipe - OpenCV](https://www.youtube.com/watch?v=6lNn5_-RPAA&ab_channel=OMES)
 - [Malla Facial (MediaPipe Face Mesh) ? | Python – MediaPipe – OpenCV](https://omes-va.com/malla-facial-mediapipe-python/)
 - [MediaPipe Face Mesh GitHub](https://github.com/google-ai-edge/mediapipe/blob/master/docs/solutions/face_mesh.md)
+- [FaceMeshIndices GitHub](https://github.com/ManuelTS/augmentedFaceMeshIndices)
 - [Pillow](https://pillow.readthedocs.io/en/stable/)
 
 
